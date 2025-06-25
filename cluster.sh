@@ -7,7 +7,7 @@
 # =============================================================================
 
 # --- Configuration ---
-VAULT_BINARY="./bao"
+VAULT_BINARY="/Users/driif/Documents/dev/openbao/bin/bao"
 LEADER_CONFIG="leader.hcl"
 STANDBY_CONFIG="standby.hcl"
 LEADER_ADDR="http://127.0.0.1:8200"
@@ -60,7 +60,7 @@ case "$1" in
 
         $VAULT_BINARY status | grep "HA Mode"
         info "Leader cluster is UP and UNSEALED."
-        warn "You can now run './cluster-manager.sh up-standby'."
+        warn "You can now run './cluster.sh up-standby'."
         ;;
 
     up-standby)
@@ -71,8 +71,8 @@ case "$1" in
         $VAULT_BINARY server -config=$STANDBY_CONFIG > standby.log 2>&1 &
         echo $! >> $PID_FILE
 
-        info "Waiting 7 seconds for standby to start and find the leader..."
-        sleep 7
+        info "Waiting 3 seconds for standby to start and find the leader..."
+        sleep 3
 
         info "Unsealing the standby node..."
         export VAULT_ADDR=$STANDBY_ADDR
@@ -82,7 +82,7 @@ case "$1" in
         sleep 2 # Final wait for roles to sync
         $VAULT_BINARY status | grep "HA Mode"
         info "Standby node is UP and UNSEALED."
-        warn "Run './cluster-manager.sh status' to see the state of the full cluster."
+        warn "Run './cluster.sh status' to see the state of the full cluster."
         ;;
 
     status)
