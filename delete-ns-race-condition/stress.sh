@@ -52,14 +52,16 @@ done
 echo "==> Ready to race deletion..."
 
 (
+  echo "==> Disabling PKI engine $PKI_PATH in $NS"
+  $BAO secrets disable -ns="$NS" "$PKI_PATH"
+) &
+
+(
   echo "==> Deleting namespace $NS"
   $BAO namespace delete "$NS"
 ) &
 
-(
-  echo "==> Disabling PKI engine $PKI_PATH in $NS"
-  $BAO secrets disable -ns="$NS" "$PKI_PATH"
-) &
+
 
 wait
 

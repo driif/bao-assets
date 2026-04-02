@@ -1,0 +1,288 @@
+--- Writer 2, Write 3 ---
+--- Writer 1, Write 3 ---
+Error writing data to testkv/writer-2/key-3: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-3
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-3: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-3
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 2, Write 4 ---
+--- Writer 1, Write 4 ---
+Error writing data to testkv/writer-2/key-4: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-4
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-4: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-4
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 5 ---
+--- Writer 2, Write 5 ---
+Error writing data to testkv/writer-2/key-5: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-5
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-5: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-5
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 6 ---
+--- Writer 2, Write 6 ---
+Error writing data to testkv/writer-1/key-6: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-6
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-2/key-6: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-6
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 7 ---
+--- Writer 2, Write 7 ---
+Error writing data to testkv/writer-2/key-7: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-7
+Code: 404. Errors:
+
+* namespace not foundError writing data to testkv/writer-1/key-7: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-7
+Code: 404. Errors:
+
+* namespace not found
+
+--- Writer 1, Write 8 ---
+--- Writer 2, Write 8 ---
+Error writing data to testkv/writer-1/key-8: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-8
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-2/key-8: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-8
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 9 ---
+--- Writer 2, Write 9 ---
+Error writing data to testkv/writer-2/key-9: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-9
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-9: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-9
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 10 ---
+--- Writer 2, Write 10 ---
+Error writing data to testkv/writer-1/key-10: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-10
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-2/key-10: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-10
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 2, Write 11 ---
+--- Writer 1, Write 11 ---
+Error writing data to testkv/writer-2/key-11: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-11
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-11: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-11
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 12 ---
+--- Writer 2, Write 12 ---
+Error writing data to testkv/writer-2/key-12: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-12
+Code: 404. Errors:
+
+* namespace not foundError writing data to testkv/writer-1/key-12: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-12
+Code: 404. Errors:
+
+* namespace not found
+
+--- Writer 1, Write 13 ---
+--- Writer 2, Write 13 ---
+Error writing data to testkv/writer-1/key-13: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-13
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-2/key-13: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-13
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 2, Write 14 ---
+--- Writer 1, Write 14 ---
+Error writing data to testkv/writer-2/key-14: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-14
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-14: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-14
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 15 ---
+--- Writer 2, Write 15 ---
+Error writing data to testkv/writer-1/key-15: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-15
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-2/key-15: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-15
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 16 ---
+--- Writer 2, Write 16 ---
+Error writing data to testkv/writer-2/key-16: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-16
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-16: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-16
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 2, Write 17 ---
+--- Writer 1, Write 17 ---
+Error writing data to testkv/writer-1/key-17: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-17
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-2/key-17: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-17
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 1, Write 18 ---
+--- Writer 2, Write 18 ---
+Error writing data to testkv/writer-1/key-18: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-18
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-2/key-18: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-18
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 2, Write 19 ---
+--- Writer 1, Write 19 ---
+Error writing data to testkv/writer-2/key-19: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-19
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-19: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-19
+Code: 404. Errors:
+
+* namespace not found
+--- Writer 2, Write 20 ---
+--- Writer 1, Write 20 ---
+Error writing data to testkv/writer-2/key-20: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-2/key-20
+Code: 404. Errors:
+
+* namespace not found
+Error writing data to testkv/writer-1/key-20: Error making API request.
+
+Namespace: mountrace/
+URL: PUT http://127.0.0.1:8200/v1/testkv/writer-1/key-20
+Code: 404. Errors:
+
+* namespace not found
