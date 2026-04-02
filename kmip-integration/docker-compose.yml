@@ -1,0 +1,39 @@
+services:
+  percona-mongodb:
+    image: percona/percona-server-mongodb:7.0
+    container_name: percona-mongodb
+    restart: "no"
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./certs:/certs:ro
+      - ./configs/mongodb.yml:/etc/mongod.conf:ro
+      - mongodb-data:/data/db
+    command: --config /etc/mongod.conf
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # no-op on macOS/Windows, required on Linux
+
+  percona-mysql:
+    image: percona/percona-server:8.0
+    container_name: percona-mysql
+    restart: "no"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: testdb
+    volumes:
+      - ./certs:/certs:ro
+      # my.cnf — enables KMIP component and sets config file path
+      - ./configs/my.cnf:/etc/mysql/conf.d/kmip.cnf:ro
+      # component manifest — must be co-located with the mysqld binary
+      - ./configs/mysqld.my:/usr/sbin/mysqld.my:ro
+      # KMIP endpoint config — loaded by component from plugin dir
+      - ./configs/component_keyring_kmip.cnf:/usr/lib64/mysql/plugin/component_keyring_kmip.cnf:ro
+      - mysql-data:/var/lib/mysql
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  mongodb-data:
+  mysql-data:

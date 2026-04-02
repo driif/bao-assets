@@ -1,0 +1,7 @@
+{
+  "server_addr": "host.docker.internal",
+  "server_port": "5696",
+  "server_ca": "/certs/ca.crt",
+  "client_ca": "/certs/mysql-client.crt",
+  "client_key": "/certs/mysql-client.key"
+}
