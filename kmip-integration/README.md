@@ -52,3 +52,39 @@ should get same key:
   encryptionKeyId: { kmip: { keyId: '0d82a3e8-8421-4b87-98ba-2017724593fc' } }
 }
 ```
+
+verify mysql:
+
+check mysql encryption and transit keys:
+```
+# Connect and insert encrypted data
+docker exec -it percona-mysql mysql -uroot -prootpass testdb -e "
+  CREATE TABLE IF NOT EXISTS secrets (id INT AUTO_INCREMENT PRIMARY KEY, message VARCHAR(255)) ENCRYPTION='Y';
+  INSERT INTO secrets (message) VALUES ('Encrypted at rest!');
+  SELECT * FROM secrets;
+"
+```
+
+Verify the key appeared in OpenBao
+`BAO_ADDR=http://127.0.0.1:8200 BAO_TOKEN=root bao list transit/keys`
+
+
+check the encryption key:
+`docker exec -it percona-mysql mysql -uroot -prootpass -e "SELECT * FROM performance_schema.keyring_keys;"`
+
+verify mysql encryption status:
+```
+docker exec -it percona-mysql mysql -uroot -prootpass -e "
+  SELECT TABLE_NAME, CREATE_OPTIONS FROM information_schema.TABLES
+  WHERE TABLE_SCHEMA='testdb' AND CREATE_OPTIONS LIKE '%ENCRYPTION%';
+"
+```
+
+should show:
+```
++------------+----------------+
+| TABLE_NAME | CREATE_OPTIONS |
++------------+----------------+
+| secrets    | ENCRYPTION="Y" |
++------------+----------------+
+```
