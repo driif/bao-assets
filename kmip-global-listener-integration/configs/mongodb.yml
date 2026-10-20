@@ -1,0 +1,15 @@
+storage:
+  dbPath: /data/db
+  engine: wiredTiger
+
+security:
+  enableEncryption: true
+  kmip:
+    serverName: host.docker.internal # resolves to host machine on macOS/Windows
+    port: 5696
+    clientCertificateFile: /certs/mongodb-client-combined.pem
+    serverCAFile: /certs/ca.crt
+
+net:
+  port: 27017
+  bindIp: 0.0.0.0
